@@ -3,7 +3,7 @@
 Summary: A client to update host entries on DynDNS like services
 Name: inadyn
 Version: 1.96.2
-Release: %mkrel 1
+Release: %mkrel 2
 License: GPL
 Group: System/Configuration/Networking
 URL: http://inadyn.ina-tech.net/
@@ -19,8 +19,6 @@ server is the real current address of the machine that is running INADYN.
 
 %prep
 %setup -q -n inadyn
-cp %{SOURCE1} .
-cp %{SOURCE2} .
 
 %build
 make clean
@@ -37,8 +35,8 @@ mkdir -p %{buildroot}%{_mandir}/{man8,man5}
 install -m 0755 -p bin/linux/inadyn %{buildroot}%{_sbindir}/
 install -m 0644 -p man/inadyn.8 %{buildroot}%{_mandir}/man8/
 install -m 0644 -p man/inadyn.conf.5 %{buildroot}%{_mandir}/man5/
-install -m 0600 -p inadyn.conf %{buildroot}%{_sysconfdir}/
-install -m 0755 -p inadyn.init %{buildroot}%{_initddir}/inadyn
+install -m 0600 -p %{SOURCE1} %{buildroot}%{_sysconfdir}/
+install -m 0755 -p %{SOURCE2} %{buildroot}%{_initddir}/inadyn
 
 %clean
 rm -rf %{buildroot}
