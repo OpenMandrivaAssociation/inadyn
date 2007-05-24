@@ -45,6 +45,7 @@ rm -rf %{buildroot}
 
 %post
 /sbin/chkconfig --add inadyn
+/sbin/chkconfig inadyn off
 
 %preun
 if [ $1 = 0 ]; then
