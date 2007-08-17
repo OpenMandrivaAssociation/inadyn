@@ -58,7 +58,7 @@ fi
 %attr(600,root,root) %config(noreplace) %{_sysconfdir}/inadyn.conf
 %{_initddir}/inadyn
 %defattr(-,root,man)
-%{_mandir}/man5/inadyn.conf.5.bz2
-%{_mandir}/man8/inadyn.8.bz2
+%{_mandir}/man5/inadyn.conf.*
+%{_mandir}/man8/inadyn.*
 
 
