@@ -10,6 +10,7 @@ URL: http://inadyn.ina-tech.net/
 Source0: http://inadyn.ina-tech.net/inadyn.v1.96.2.zip
 Source1: inadyn.conf
 Source2: inadyn.init
+BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 INADYN is a dynamic DNS client. That is, it maintains the IP address of a
