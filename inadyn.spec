@@ -3,14 +3,14 @@
 Summary: A client to update host entries on DynDNS like services
 Name: inadyn
 Version: 1.96.2
-Release: %mkrel 2
+Release: %mkrel 3
 License: GPL
 Group: System/Configuration/Networking
 URL: http://inadyn.ina-tech.net/
 Source0: http://inadyn.ina-tech.net/inadyn.v1.96.2.zip
 Source1: inadyn.conf
 Source2: inadyn.init
-BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 INADYN is a dynamic DNS client. That is, it maintains the IP address of a
