@@ -3,7 +3,7 @@
 Summary: A client to update host entries on DynDNS like services
 Name: inadyn
 Version: 1.96.2
-Release: %mkrel 3
+Release: %mkrel 4
 License: GPL
 Group: System/Configuration/Networking
 URL: http://inadyn.ina-tech.net/
