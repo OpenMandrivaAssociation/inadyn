@@ -62,3 +62,40 @@ fi
 %{_mandir}/man8/inadyn.*
 
 
+
+
+%changelog
+* Wed Mar 16 2011 Stéphane Téletchéa <steletch@mandriva.org> 1.98.0-1mdv2011.0
++ Revision: 645247
+- update to new version 1.98.0
+
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 1.96.2-5mdv2011.0
++ Revision: 619626
+- the mass rebuild of 2010.0 packages
+
+* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 1.96.2-4mdv2010.0
++ Revision: 429509
+- rebuild
+
+* Sun Jul 20 2008 Oden Eriksson <oeriksson@mandriva.com> 1.96.2-3mdv2009.0
++ Revision: 239032
+- rebuild
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+    - fix man pages
+
+* Fri May 25 2007 Ademar de Souza Reis Jr <ademar@mandriva.com.br> 1.96.2-2mdv2008.0
++ Revision: 30932
+- minor spec cleanup (build/install)
+
+* Thu May 24 2007 Ademar de Souza Reis Jr <ademar@mandriva.com.br> 1.96.2-1mdv2008.0
++ Revision: 30804
+- fix/improve initscript
+- disable service by default upon installation
+  (without proper config, the service is useless and noisy)
+- Import inadyn
+
