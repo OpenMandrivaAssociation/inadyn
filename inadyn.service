@@ -1,0 +1,15 @@
+[Unit]
+Description=inadyn updates dyndns information
+Requires=rpcbind.service
+After=syslog.target network.target rpcbind.service 
+
+[Service]
+Type=forking
+RemainAfterExit=yes
+EnvironmentFile=/etc/sysconfig/network
+EnvironmentFile=/etc/inadyn.conf
+EnvironmentFile=/etc/rc.d/init.d/functions
+ExecStart=/usr/sbin/inadyn
+
+[Install]
+WantedBy=multi-user.target
