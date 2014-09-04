@@ -1,7 +1,7 @@
 Summary: A client to update host entries on DynDNS like services
 Name:    inadyn
 Version: 1.98.0
-Release: 3
+Release: 5
 License: GPL
 Group:   System/Configuration/Networking
 URL:     http://inadyn.ina-tech.net/
@@ -24,7 +24,6 @@ make clean
 make
 
 %install
-
 mkdir -p %{buildroot}%{_sbindir}
 mkdir -p %{buildroot}%{_sysconfdir}
 mkdir -p %{buildroot}%{_unitdir}
@@ -39,10 +38,13 @@ install -m 0755 -p %{SOURCE2} %{buildroot}%{_unitdir}/inadyn.service
 %clean
 
 %post
-%_post_service %{name}
+%systemd_post %{name}.service
 
 %preun
-%_preun_service %{name}
+%systemd_preun %{name}.service
+
+%postun
+%systemd_postun_with_restart %{name}.service
 
 %files
 %doc readme.html
