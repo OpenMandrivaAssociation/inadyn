@@ -1,3 +1,5 @@
+%define debug_package %{nil}
+
 Summary: A client to update host entries on DynDNS like services
 Name:    inadyn
 Version: 1.98.0
