@@ -6,7 +6,7 @@ Version: 1.98.0
 Release: 6
 License: GPL
 Group:   System/Configuration/Networking
-URL:     http://inadyn.ina-tech.net/
+URL:     https://inadyn.ina-tech.net/
 Source0: http://inadyn.ina-tech.net/inadyn.v1.96.2.zip
 Source1: inadyn.conf
 Source2: inadyn.service
