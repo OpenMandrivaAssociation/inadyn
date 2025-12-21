@@ -13,6 +13,7 @@ Source2: inadyn.service
 Requires(preun):rpm-helper
 Requires(post): rpm-helper
 
+BuildRequires:	make
 %description
 INADYN is a dynamic DNS client. That is, it maintains the IP address of a
 host name. It periodically checks whether the IP address stored by the DNS
